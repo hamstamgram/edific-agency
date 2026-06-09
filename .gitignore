@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+.env
+.env.local
+.env.*.local
+
+# n8n
+n8n_data/
+*.n8n
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Secrets (never commit)
+secrets/
+*.key
+*.pem
+credentials.json
