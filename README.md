@@ -1,176 +1,48 @@
-# Edific
+# Edific — The Dental Intake Engine (edific.uk)
 
-**AI Automation Agency — Building Smarter Systems for Growing Businesses**
+Single-page marketing site for the **Dental Intake Engine** — a premium vertical AI product for dental practices. Positioned as a product, not an agency: *"Not AI receptionists. AI for dentistry."*
 
-🌐 **Website:** [edific.uk](https://edific.uk)
+## Files
 
----
+| File | Purpose |
+|------|---------|
+| `index.html` | The entire site — markup, CSS, JS, and JSON-LD schemas inline. No build step. |
+| `plan.md` | The design plan this build follows (design system, sections, motion, SEO). |
+| `llms.txt` | AI-engine digest of the offer (AEO). Deploy at `/llms.txt`. |
+| `robots.txt` | Allow-all crawl policy + sitemap pointer. Deploy at `/robots.txt`. |
 
-## About Edific
+## Design provenance
 
-Edific is an AI automation agency that helps businesses streamline operations, capture more leads, and deliver exceptional customer experiences through intelligent automation. We build the systems that let you focus on growing your business.
+- **Structure & copy patterns**: CaseFlood / Hormozi 10-pattern blueprint (`../HORMOZI-PORTFOLIO-PATTERNS.md`) — one offer, one price (€997/mo), waitlist CTA, named case study, speed-led value prop, "most practices don't need more patients" twist.
+- **Copy voice**: Vapi.ai — outcome-led, concrete numbers, short declaratives.
+- **Hero treatment**: VectrFL.com — Three.js animated canvas under a gradient overlay.
+- **Design system**: white `#ffffff`, Inter, text `#1e293b`, accent `#1e63d2`, pill buttons (radius 100px), cards `#f8fafc`/`#e2e8f0`, 1200px container, 128px section padding.
 
-We specialize in **med spas, dental practices, and home service companies** — industries where every missed call or slow follow-up costs real revenue.
+## Tech
 
----
+- Pure HTML/CSS/JS — no frameworks, no build step.
+- **Three.js 0.182.0** via CDN importmap: 400 particles on a jittered torus, slow rotation + mouse parallax. Renders only while the hero is on screen; static frame under `prefers-reduced-motion`; CSS gradient fallback when WebGL is unavailable (a looping video can be slotted into `.hero-fallback` later).
+- **GSAP 3.13 + ScrollTrigger** via CDN: hero entrance sequence, fade-up reveals, card staggers, count-up metrics. All disabled under reduced motion; content is fully visible with JS off (`no-js` class).
+- **SEO/AEO**: FAQPage, Product, HowTo, and LocalBusiness JSON-LD; OG + Twitter cards; canonical `https://edific.uk/`; semantic HTML5 with ARIA labels and a skip link.
+- Authored payload ≈ 50 KB (libraries load from CDN). Lighthouse target: 90+.
 
-## Services
+## Develop
 
-### 🤖 AI Chatbots (Claude-Powered)
-Intelligent conversational agents that handle customer inquiries 24/7 — qualifying leads, booking appointments, and answering FAQs without human intervention.
-
-- Website chat widgets
-- SMS/MMS conversational bots
-- Lead qualification and scoring
-- Multi-turn dialogue management
-- Custom knowledge base integration
-
-### ⚙️ n8n Workflow Automation
-Custom workflows that connect your tools and automate repetitive tasks — from lead routing to appointment scheduling to post-service follow-ups.
-
-- CRM integrations (GoHighLevel, HubSpot, Salesforce)
-- Calendar and booking automation
-- Data synchronization between platforms
-- Custom API integrations
-- Webhook-based event triggers
-
-### 📞 Voice AI Agents (Vapi / Retell)
-AI-powered phone agents that answer calls, schedule appointments, and follow up with prospects — handling the calls your team cannot get to.
-
-- Inbound call handling and triage
-- Outbound appointment confirmation
-- Missed call recovery campaigns
-- Voicemail drop and callback scheduling
-- Real-time transcript and summary dashboards
-
-### 🎯 Lead Generation Systems
-End-to-end lead capture and nurturing pipelines that turn strangers into booked appointments.
-
-- Facebook/Google Ads to CRM automation
-- Landing page to follow-up sequences
-- Review request automation
-- Referral program systems
-- Re-engagement campaigns for dormant leads
-
----
-
-## Tech Stack
-
-| Category | Tools |
-|----------|-------|
-| **Workflow Engine** | n8n (self-hosted and cloud) |
-| **AI / LLM** | Claude (Anthropic), OpenAI GPT-4 |
-| **Voice** | Vapi, Retell AI |
-| **CRM / Marketing** | GoHighLevel, HubSpot, ActiveCampaign |
-| **Databases** | PostgreSQL, Supabase, Airtable |
-| **Hosting** | Railway, Render, AWS, VPS |
-| **Communication** | Twilio, SendGrid, Postmark |
-| **Monitoring** | Grafana, Uptime Robot, custom dashboards |
-
----
-
-## Pricing
-
-| Tier | Price | What's Included |
-|------|-------|-----------------|
-| **Quick Gig** | €199 – €999 setup | Single workflow, chatbot setup, or one-off automation |
-| **Hourly** | €95/hr | Custom development, consulting, debugging |
-| **Retainer** | €1,500/mo | Ongoing support, monthly optimization, priority response |
-
-Custom packages available for enterprise clients.
-
----
-
-## Getting Started
-
-1. **Book a call** — Tell us about your business and pain points
-2. **Audit and proposal** — We map your workflows and recommend automations
-3. **Build and test** — We develop, sandbox test, and refine
-4. **Launch and monitor** — Go live with monitoring and support
-
----
-
-## Repository Structure
-
-```
-edific/
-├── workflows/          # n8n workflow exports and templates
-├── demos/              # Demo scripts, screenshots, video links
-├── docs/               # Setup guides, architecture docs, SOPs
-├── templates/          # Reusable templates and boilerplates
-├── screenshots/        # Portfolio images and workflow screenshots
-├── index.html          # Landing page (GitHub Pages)
-├── CNAME               # Custom domain for GitHub Pages
-├── README.md           # This file
-├── LICENSE             # MIT License
-└── .gitignore          # Standard ignores
+```bash
+open index.html        # or any static server, e.g.:
+python3 -m http.server 8000
 ```
 
----
+Note: the Three.js importmap loads over HTTPS, so a local server (not `file://`) is needed in some browsers.
 
-## GitHub Pages Deployment
+## Deploy
 
-This repo is deployed as a static site at [edific.uk](https://edific.uk) using GitHub Pages.
+Copy `index.html`, `llms.txt`, and `robots.txt` to any static host (Cloudflare Pages, Netlify, Vercel, GitHub Pages) behind **edific.uk**.
 
-### Setup Instructions
+Pre-launch checklist:
 
-1. **Push your landing page** — The `index.html` file in the repo root is served as the site homepage.
-
-2. **Add a CNAME file** — A `CNAME` file is included with the content `edific.uk` to configure the custom domain.
-
-3. **Configure GitHub Pages:**
-   - Go to **Settings → Pages** in the GitHub repo
-   - Under **Source**, select **Deploy from a branch**
-   - Choose the `main` branch and `/ (root)` folder
-   - Click **Save**
-
-4. **Set up your domain DNS:**
-   - Add an **A record** pointing to GitHub's IPs:
-     ```
-     185.199.108.153
-     185.199.109.153
-     185.199.110.153
-     185.199.111.153
-     ```
-   - Or add a **CNAME record** pointing to `hamstamgram.github.io`
-   - Enable **Enforce HTTPS** in the Pages settings once DNS propagates
-
-5. **Verify** — Visit [https://edific.uk](https://edific.uk) to confirm the site is live.
-
-> **Note:** DNS propagation can take up to 24–48 hours. GitHub Pages provides free SSL certificates automatically.
-
----
-
-## Workflows
-
-Check out the `workflows/` directory for example n8n workflow exports you can import directly into your n8n instance.
-
----
-
-## Portfolio
-
-Visit `demos/` for walkthroughs, screenshots, and case studies of automations we have built.
-
----
-
-## Documentation
-
-Setup guides, architecture decisions, and standard operating procedures live in `docs/`.
-
----
-
-## Contact
-
-- **Website:** [edific.uk](https://edific.uk)
-- **GitHub:** [hamstamgram](https://github.com/hamstamgram)
-- **Email:** hello@edific.uk
-
----
-
-## License
-
-This repository and its contents are licensed under the MIT License — see LICENSE for details.
-
----
-
-*Built with care by Edific — Automate. Accelerate. Scale.*
+- [ ] Upload an OG image at `/og.png` (1200×630) — currently referenced but not created.
+- [ ] Add `sitemap.xml` (single-URL sitemap for `/`).
+- [ ] Wire the waitlist forms to the Supabase capture table (Phase 3 of `../BUILD-PLAN.md`). Until then, submissions open a prefilled `mailto:hello@edific.uk` — the handler is `handleWaitlist()` in `index.html`, marked with a `TODO`.
+- [ ] Add analytics (Plausible or PostHog, per BUILD-PLAN).
+- [ ] Replace the Praxis Dr. Weber metrics with the signed pilot's real numbers once available.

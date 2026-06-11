@@ -1,689 +1,1188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edific — AI Systems That Work While You Sleep</title>
+<title>Edific — The Dental Intake Engine | Not AI receptionists. AI for dentistry.</title>
+<meta name="description" content="Book 2–3x more of the patients already contacting your practice. Every call and WhatsApp answered in 2 seconds, qualified, and booked — live in 48 hours. €997/mo.">
+<meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://edific.uk/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://edific.uk/">
+<meta property="og:site_name" content="Edific">
+<meta property="og:title" content="Edific — The Dental Intake Engine">
+<meta property="og:description" content="Not AI receptionists. AI for dentistry. Book 2–3x more of the patients already contacting your practice. Live in 48 hours.">
+<meta property="og:image" content="https://edific.uk/og.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Edific — The Dental Intake Engine">
+<meta name="twitter:description" content="Not AI receptionists. AI for dentistry. Book 2–3x more of the patients already contacting your practice. Live in 48 hours.">
+<meta name="twitter:image" content="https://edific.uk/og.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#ffffff;--bg-alt:#fafbfc;
-  --card:#ffffff;--card-hover:#f8fafc;
-  --border:#e2e8f0;--border-hover:#cbd5e1;
-  --text:#0f172a;--text2:#475569;--text3:#94a3b8;
-  --blue:#1e63d2;--blue-hover:#1850b0;--blue-light:#dbeafe;
-  --green:#10b981;--green-light:#d1fae5;
-  --shadow-sm:0 1px 2px rgba(15,23,42,0.04);
-  --shadow:0 4px 20px rgba(15,23,42,0.06);
-  --shadow-lg:0 20px 60px rgba(30,99,210,0.12);
-  --radius:12px;--radius-sm:8px;--radius-lg:20px;
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231e63d2'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
+<!-- JSON-LD: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://edific.uk/#business",
+  "name": "Edific",
+  "description": "The Dental Intake Engine — automated patient intake for dental practices. Every call and WhatsApp answered in 2 seconds, qualified, and booked.",
+  "url": "https://edific.uk/",
+  "email": "hello@edific.uk",
+  "priceRange": "€€€",
+  "areaServed": [
+    { "@type": "City", "name": "Lisbon" },
+    { "@type": "Place", "name": "Europe" }
+  ]
 }
-html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.5;overflow-x:hidden;font-weight:400}
+</script>
 
-/* ===== GLOBAL ===== */
-.section{padding:120px 24px}
-.section-sm{padding:80px 24px}
-.inner{max-width:1120px;margin:0 auto}
-.tag{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:16px}
-h1,h2,h3{font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:var(--text)}
-h1{font-size:clamp(40px,6vw,72px);font-weight:700;letter-spacing:-0.035em;line-height:1.05}
-h2{font-size:clamp(32px,4.5vw,52px);letter-spacing:-0.03em;margin-bottom:20px}
-h3{font-size:20px;font-weight:600;letter-spacing:-0.01em;margin-bottom:8px}
-.desc{font-size:18px;line-height:1.6;color:var(--text2);max-width:560px}
-.desc-center{text-align:center;margin:0 auto}
-.text-center{text-align:center}
+<!-- JSON-LD: Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://edific.uk/#product",
+  "name": "The Dental Intake Engine",
+  "brand": { "@type": "Brand", "name": "Edific" },
+  "description": "Automated patient intake for dental practices. Answers every call, WhatsApp, and web inquiry in 2 seconds, qualifies the patient, books the appointment, and keeps your calendar and CRM current. Live in 48 hours.",
+  "url": "https://edific.uk/#pricing",
+  "offers": {
+    "@type": "Offer",
+    "price": "997",
+    "priceCurrency": "EUR",
+    "description": "€997 per month. One price, no tiers. Includes setup, monitoring, and the 5-new-patients-in-30-days guarantee.",
+    "availability": "https://schema.org/LimitedAvailability",
+    "url": "https://edific.uk/#apply"
+  }
+}
+</script>
 
-/* ===== NAV ===== */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:16px 24px}
-.nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:20px;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:-0.02em;display:flex;align-items:center;gap:8px}
-.logo-mark{width:28px;height:28px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:700}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-size:14px;font-weight:500;color:var(--text2);text-decoration:none;transition:color .2s}
+<!-- JSON-LD: HowTo -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How the Dental Intake Engine books your patients",
+  "description": "From first contact to a confirmed appointment in your calendar — automatically.",
+  "step": [
+    { "@type": "HowToStep", "position": 1, "name": "A patient contacts your practice", "text": "Phone, WhatsApp, or your website — during a procedure, after hours, or on a Sunday." },
+    { "@type": "HowToStep", "position": 2, "name": "Answered in 2 seconds", "text": "Every inquiry gets an instant, human-quality response. No voicemail. No 'we'll call you back'." },
+    { "@type": "HowToStep", "position": 3, "name": "Qualified and booked", "text": "Treatment, urgency, and insurance are checked, then the appointment is booked straight into your calendar. Emergencies route to a human instantly." },
+    { "@type": "HowToStep", "position": 4, "name": "Your systems updated", "text": "Every contact logged in your CRM, every no-show followed up, every visit followed by a review request." }
+  ]
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this replace my receptionist?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. It handles the routine — appointment requests, reschedules, reminders, after-hours inquiries — so your receptionist focuses on the patients in the chair. Most front desks get 15+ hours a week back." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the engine gets something wrong?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Anything urgent or ambiguous routes to a human instantly — you or your front desk get a notification within seconds. Everything else is monitored daily, and we fix issues before they reach a second patient." }
+    },
+    {
+      "@type": "Question",
+      "name": "How fast can we go live?",
+      "acceptedAnswer": { "@type": "Answer", "text": "48 hours from sign to live. We connect your calendar and WhatsApp on day one, tune the responses to your practice on day two, and you see first results within the first week." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it speak my patients' languages?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Portuguese, English, French, and German, switching automatically to whatever language the patient writes or speaks in. Patients don't notice anything except a fast, helpful answer." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with my existing calendar and software?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. It connects to your existing calendar, phone number, WhatsApp, and practice software. You replace nothing, your number stays the same, and your team keeps working the way they already do." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I want to cancel?",
+      "acceptedAnswer": { "@type": "Answer", "text": "30-day notice, no long-term contracts, no exit fees. And if the engine doesn't book you 5 new patients in your first 30 days, you get your money back." }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============ Design tokens ============ */
+:root{
+  --bg:#ffffff;
+  --text:#1e293b;
+  --text-2:#4a4e56;
+  --accent:#1e63d2;
+  --accent-hover:#1550b0;
+  --accent-tint:#eaf1fc;
+  --card-bg:#f8fafc;
+  --card-border:#e2e8f0;
+  --radius-card:16px;
+  --max:1200px;
+  --section-pad:128px 24px;
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+}
+
+/* ============ Reset & base ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  font-size:20px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img,svg{display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:var(--accent-hover)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.visually-hidden{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+.skip-link{
+  position:absolute;top:-48px;left:16px;z-index:200;
+  background:var(--accent);color:#fff;padding:10px 20px;border-radius:100px;
+  font-weight:600;font-size:15px;transition:top .2s;
+}
+.skip-link:focus{top:12px;color:#fff}
+
+/* ============ Typography ============ */
+h1{font-size:72px;font-weight:600;letter-spacing:-1.8px;line-height:1.05}
+h2{font-size:48px;font-weight:600;letter-spacing:-1.2px;line-height:1.15}
+h3{font-size:24px;font-weight:600;letter-spacing:-0.4px;line-height:1.3}
+.section-kicker{
+  display:inline-block;font-size:14px;font-weight:600;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--accent);margin-bottom:16px;
+}
+.section-sub{font-size:20px;color:var(--text-2);max-width:680px;margin:20px auto 0}
+
+/* ============ Layout ============ */
+.section{padding:var(--section-pad)}
+.container{max-width:var(--max);margin:0 auto}
+.section-head{text-align:center;max-width:820px;margin:0 auto 72px}
+
+/* ============ Buttons ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  border-radius:100px;padding:12px 28px;font-family:var(--font);
+  font-size:16px;font-weight:600;line-height:1.4;cursor:pointer;
+  border:1px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .15s;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover);color:#fff;transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--text);border-color:var(--card-border)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn-lg{padding:16px 36px;font-size:17px}
+
+/* ============ Nav ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(255,255,255,.85);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s;
+}
+.nav.scrolled{border-bottom-color:var(--card-border);box-shadow:0 1px 12px rgba(30,41,59,.06)}
+.nav-inner{
+  max-width:var(--max);margin:0 auto;padding:0 24px;height:76px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;letter-spacing:-0.5px;color:var(--text)}
+.logo:hover{color:var(--text)}
+.logo-mark{
+  width:32px;height:32px;border-radius:9px;background:var(--accent);
+  display:grid;place-items:center;color:#fff;font-size:17px;font-weight:700;
+}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none}
+.nav-links a{font-size:16px;font-weight:500;color:var(--text-2)}
 .nav-links a:hover{color:var(--text)}
-.nav-cta{font-size:14px;font-weight:600;color:#fff;background:var(--blue);padding:10px 20px;border-radius:100px;text-decoration:none;transition:all .2s;box-shadow:var(--shadow-sm)}
-.nav-cta:hover{background:var(--blue-hover);transform:translateY(-1px);box-shadow:var(--shadow)}
 
-/* ===== HERO ===== */
-.hero{padding:160px 24px 100px;position:relative;overflow:hidden;background:linear-gradient(180deg,#fafbfc 0%,#ffffff 100%)}
-.hero-inner{max-width:1120px;margin:0 auto;text-align:center;position:relative;z-index:2}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--blue-light);border:1px solid rgba(30,99,210,0.15);padding:6px 14px;border-radius:100px;font-size:13px;font-weight:500;color:var(--blue);margin-bottom:32px}
-.hero-badge-dot{width:6px;height:6px;background:var(--green);border-radius:50%;box-shadow:0 0 0 4px rgba(16,185,129,0.2)}
-.hero h1{margin-bottom:24px}
-.hero h1 .hl{color:var(--blue);position:relative;display:inline-block}
-.hero p{font-size:20px;line-height:1.6;color:var(--text2);max-width:600px;margin:0 auto 40px}
-.hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:100px;font-size:15px;font-weight:600;text-decoration:none;cursor:pointer;transition:all .25s;border:none;font-family:inherit;line-height:1}
-.btn-primary{background:var(--blue);color:#fff;box-shadow:0 4px 20px rgba(30,99,210,0.25)}
-.btn-primary:hover{background:var(--blue-hover);transform:translateY(-2px);box-shadow:0 8px 30px rgba(30,99,210,0.35)}
-.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border);box-shadow:var(--shadow-sm)}
-.btn-outline:hover{background:var(--card-hover);border-color:var(--border-hover)}
-.hero-stats{display:flex;gap:48px;justify-content:center;flex-wrap:wrap;padding-top:40px;border-top:1px solid var(--border)}
-.hero-stat{text-align:center}
-.hero-stat-num{font-size:32px;font-weight:700;letter-spacing:-0.02em;color:var(--text)}
-.hero-stat-num .accent{color:var(--blue)}
-.hero-stat-lbl{font-size:13px;color:var(--text2);margin-top:4px}
+/* ============ Hero ============ */
+.hero{
+  position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;
+  padding:140px 24px 96px;overflow:hidden;
+}
+.hero-fallback{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(640px 420px at 12% 22%, rgba(30,99,210,.10), transparent 70%),
+    radial-gradient(720px 480px at 88% 72%, rgba(30,99,210,.08), transparent 70%),
+    radial-gradient(420px 320px at 78% 14%, rgba(141,178,232,.12), transparent 70%),
+    #ffffff;
+}
+#hero-canvas{position:absolute;inset:0;z-index:1;width:100%;height:100%}
+.hero-overlay{
+  position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:
+    radial-gradient(ellipse 62% 56% at 50% 46%, rgba(255,255,255,.92) 0%, rgba(255,255,255,.55) 60%, rgba(255,255,255,0) 100%),
+    linear-gradient(to bottom, rgba(255,255,255,.6) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%);
+}
+.hero-content{position:relative;z-index:3;text-align:center;max-width:880px}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-tint);color:var(--accent);
+  font-size:14px;font-weight:600;letter-spacing:.3px;
+  padding:7px 18px;border-radius:100px;margin-bottom:28px;
+}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1 .line-2{display:block;color:var(--accent)}
+.hero-sub{font-size:22px;color:var(--text-2);max-width:620px;margin:28px auto 0}
+.hero-proof{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;
+  margin-top:36px;font-size:15px;font-weight:500;color:var(--text-2);list-style:none;
+}
+.hero-proof li{display:flex;align-items:center;gap:8px}
+.hero-proof svg{flex:none}
 
-/* ===== LOGO BAR ===== */
-.logos{padding:40px 24px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg-alt)}
-.logos-inner{max-width:1120px;margin:0 auto;text-align:center}
-.logos-label{font-size:13px;font-weight:500;color:var(--text3);margin-bottom:24px;letter-spacing:0.5px}
-.logo-grid{display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;opacity:0.7}
-.logo-item{font-size:16px;font-weight:600;color:var(--text3);letter-spacing:-0.01em}
+/* ============ Waitlist form ============ */
+.waitlist{margin:40px auto 0;max-width:520px}
+.waitlist-form{display:flex;gap:10px;background:#fff;border:1px solid var(--card-border);border-radius:100px;padding:6px;box-shadow:0 8px 32px rgba(30,41,59,.08)}
+.waitlist-form input{
+  flex:1;min-width:0;border:0;background:transparent;font-family:var(--font);
+  font-size:16px;color:var(--text);padding:10px 18px;outline:none;
+}
+.waitlist-form input::placeholder{color:#94a3b8}
+.waitlist-note{font-size:14px;color:var(--text-2);margin-top:14px;text-align:center}
+.waitlist-success{
+  display:none;text-align:center;background:var(--accent-tint);color:var(--accent);
+  border-radius:var(--radius-card);padding:20px 24px;font-size:17px;font-weight:500;
+}
+.waitlist.sent .waitlist-form,.waitlist.sent .waitlist-note{display:none}
+.waitlist.sent .waitlist-success{display:block}
 
-/* ===== PROBLEM ===== */
-.problem{background:var(--bg-alt)}
-.problem h2{margin-bottom:16px}
-.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
-.p-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:all .25s}
-.p-card:hover{box-shadow:var(--shadow);border-color:var(--border-hover)}
-.p-icon{width:44px;height:44px;background:var(--blue-light);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;font-size:20px}
-.p-card h3{color:var(--text);margin-bottom:8px}
-.p-card p{color:var(--text2);font-size:15px;line-height:1.55}
+/* ============ Cards & grids ============ */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:var(--radius-card);padding:32px;
+  transition:transform .25s,box-shadow .25s,border-color .25s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(30,41,59,.08);border-color:#cbd8ea}
+.card-icon{
+  width:48px;height:48px;border-radius:12px;background:var(--accent-tint);
+  display:grid;place-items:center;color:var(--accent);margin-bottom:20px;
+}
+.card h3{margin-bottom:10px}
+.card p{font-size:17px;color:var(--text-2)}
+.stat{font-size:48px;font-weight:700;letter-spacing:-1.5px;color:var(--accent);line-height:1.1;margin-bottom:8px}
+.stat-label{font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text-2);margin-bottom:16px}
 
-/* ===== SOLUTION ===== */
-.solution-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:60px}
-.solution-list{list-style:none}
-.solution-list li{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--border)}
-.solution-list li:last-child{border-bottom:none}
-.solution-check{width:24px;height:24px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.solution-check::after{content:"✓";color:var(--green);font-size:14px;font-weight:700}
-.solution-list strong{color:var(--text);font-size:16px;font-weight:600;display:block;margin-bottom:4px}
-.solution-list span{color:var(--text2);font-size:15px;line-height:1.5}
-.solution-visual{background:linear-gradient(135deg,#1e63d2 0%,#1850b0 100%);border-radius:var(--radius-lg);padding:40px;color:#fff;position:relative;overflow:hidden}
-.solution-visual::before{content:"";position:absolute;top:-50%;right:-30%;width:300px;height:300px;background:rgba(255,255,255,0.08);border-radius:50%}
-.code-block{background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius-sm);padding:20px;font-family:'SF Mono',monospace;font-size:13px;line-height:1.7;position:relative;z-index:2}
-.code-block .comment{color:rgba(255,255,255,0.5)}
-.code-block .key{color:#7dd3fc}
-.code-block .val{color:#fde68a}
-.code-block .flow{color:#f9a8d4}
+/* ============ Twist statement ============ */
+.twist{background:var(--text);color:#fff;text-align:center}
+.twist h2{font-size:52px;max-width:880px;margin:0 auto;color:#fff}
+.twist h2 em{font-style:normal;color:#8db2e8}
+.twist-lines{max-width:640px;margin:40px auto 0;font-size:20px;color:#b8c2d4;display:grid;gap:8px;list-style:none}
+.twist-punch{margin-top:36px;font-size:22px;font-weight:600;color:#fff}
 
-/* ===== CASE STUDY ===== */
-.case-study{background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);color:#fff;position:relative;overflow:hidden}
-.case-study h2{color:#fff}
-.case-study .desc{color:rgba(255,255,255,0.7)}
-.case-inner{max-width:1120px;margin:0 auto;position:relative;z-index:2}
-.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:60px}
-.case-stats{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:40px}
-.case-stat{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:24px;backdrop-filter:blur(10px)}
-.case-stat-label{font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:8px}
-.case-stat-value{font-size:36px;font-weight:700;letter-spacing:-0.02em;color:#fff}
-.case-stat-value .delta{color:#10b981;font-size:18px;margin-left:8px}
-.case-quote{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);padding:32px;backdrop-filter:blur(10px)}
-.case-quote-text{font-size:20px;line-height:1.5;color:#fff;margin-bottom:20px;font-weight:500}
-.case-author{display:flex;align-items:center;gap:12px}
-.case-avatar{width:44px;height:44px;background:linear-gradient(135deg,#1e63d2,#8b5cf6);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;color:#fff}
-.case-name{font-weight:600;color:#fff}
-.case-role{font-size:13px;color:rgba(255,255,255,0.6)}
+/* ============ How it works ============ */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step;list-style:none}
+.step{position:relative;background:var(--card-bg);border:1px solid var(--card-border);border-radius:var(--radius-card);padding:32px 28px}
+.step-num{
+  width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-size:17px;font-weight:700;margin-bottom:20px;
+}
+.step h3{font-size:20px;margin-bottom:10px}
+.step p{font-size:16px;color:var(--text-2)}
+.step::after{
+  content:"";position:absolute;top:50px;right:-24px;width:24px;height:2px;
+  background:var(--card-border);
+}
+.step:last-child::after{display:none}
+.how-note{text-align:center;margin-top:40px;font-size:17px;color:var(--text-2)}
+.how-note strong{color:var(--text)}
 
-/* ===== PROCESS ===== */
-.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:60px;position:relative}
-.process-step{position:relative;text-align:left;padding:32px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);transition:all .25s}
-.process-step:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:var(--blue-light)}
-.step-num{width:36px;height:36px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;margin-bottom:20px}
-.process-step h3{font-size:18px;margin-bottom:8px}
-.process-step p{font-size:14px;color:var(--text2);line-height:1.5}
-.step-time{position:absolute;top:32px;right:32px;font-size:11px;font-weight:600;color:var(--blue);background:var(--blue-light);padding:4px 10px;border-radius:100px}
+/* ============ Case study ============ */
+.case{background:var(--card-bg);border-top:1px solid var(--card-border);border-bottom:1px solid var(--card-border)}
+.case-quote{
+  max-width:820px;margin:0 auto;text-align:center;
+}
+.case-quote blockquote p{font-size:28px;font-weight:500;letter-spacing:-0.5px;line-height:1.45;color:var(--text)}
+.case-quote blockquote p::before{content:"\201C"}
+.case-quote blockquote p::after{content:"\201D"}
+.case-attr{margin-top:24px;font-size:16px;color:var(--text-2)}
+.case-attr strong{display:block;font-size:17px;color:var(--text)}
+.case-metrics{margin-top:64px}
+.case-metrics .card{background:#fff;text-align:center}
+.case-footnote{text-align:center;margin-top:32px;font-size:15px;color:var(--text-2)}
 
-/* ===== PRICING ===== */
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px}
-.pricing-diff{background:var(--green-light);border:1px solid rgba(16,185,129,0.3);border-radius:var(--radius);padding:20px 24px;margin-top:40px;max-width:640px;margin-left:auto;margin-right:auto}
-.pricing-diff p{font-size:14px;color:var(--text2);line-height:1.6}
-.pricing-diff strong{color:var(--text)}
-.pricing-diff-badge{display:inline-flex;align-items:center;gap:6px;background:var(--green);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:100px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px}
-.price-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:40px;position:relative;transition:all .25s}
-.price-card:hover{box-shadow:var(--shadow)}
-.price-card.featured{border-color:var(--blue);box-shadow:var(--shadow-lg);transform:scale(1.02)}
-.price-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:12px;font-weight:600;padding:6px 16px;border-radius:100px;letter-spacing:0.5px}
-.price-name{font-size:14px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
-.price-amount{font-size:48px;font-weight:700;letter-spacing:-0.03em;color:var(--text);margin-bottom:4px}
-.price-amount .currency{font-size:24px;vertical-align:super;margin-right:4px}
-.price-amount .period{font-size:16px;font-weight:500;color:var(--text2)}
-.price-desc{color:var(--text2);font-size:15px;margin-bottom:24px;line-height:1.5}
-.price-features{list-style:none;margin-bottom:32px}
-.price-features li{display:flex;gap:10px;padding:8px 0;font-size:14px;color:var(--text2)}
-.price-features li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0}
-.price-cta{display:block;text-align:center;width:100%;padding:14px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:100px;font-size:15px;font-weight:600;text-decoration:none;transition:all .2s}
-.price-cta:hover{background:var(--card-hover);border-color:var(--border-hover)}
-.price-card.featured .price-cta{background:var(--blue);color:#fff;border-color:var(--blue)}
-.price-card.featured .price-cta:hover{background:var(--blue-hover);transform:translateY(-1px)}
-.price-compare{width:100%;margin-top:60px;border-collapse:collapse;font-size:14px}
-.price-compare th,.price-compare td{padding:14px 20px;text-align:left;border-bottom:1px solid var(--border)}
-.price-compare th{font-size:12px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:1px}
-.price-compare td{color:var(--text2)}
-.price-compare .highlight{color:var(--green);font-weight:600}
-.price-compare .muted{color:var(--text3)}
+/* ============ Before / After table ============ */
+.table-wrap{overflow-x:auto;border:1px solid var(--card-border);border-radius:var(--radius-card)}
+table{width:100%;border-collapse:collapse;font-size:17px;min-width:640px}
+caption{text-align:left}
+th,td{padding:20px 28px;text-align:left;border-bottom:1px solid var(--card-border)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+thead th{font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--text-2);background:var(--card-bg)}
+tbody th{font-weight:600;color:var(--text)}
+td.before{color:var(--text-2)}
+td.after{color:var(--accent);font-weight:600;background:rgba(30,99,210,.04)}
+thead th.after-h{color:var(--accent)}
 
-/* ===== FOUNDER ===== */
-.founder{background:var(--bg-alt)}
-.founder-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:80px;align-items:center;margin-top:60px}
-.founder-img{width:100%;aspect-ratio:1;background:linear-gradient(135deg,#1e63d2,#8b5cf6);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;color:#fff;font-size:120px;font-weight:700;position:relative;overflow:hidden}
-.founder-img::before{content:"";position:absolute;top:-40%;right:-20%;width:200px;height:200px;background:rgba(255,255,255,0.1);border-radius:50%}
-.founder-quote{font-size:20px;line-height:1.6;color:var(--text);margin-bottom:24px;font-weight:500}
-.founder-bio{color:var(--text2);line-height:1.7;margin-bottom:20px}
-.founder-signature{font-weight:600;color:var(--text);margin-top:16px}
-.founder-credentials{display:flex;gap:24px;margin-top:20px;flex-wrap:wrap}
-.credential{font-size:13px;color:var(--text2);display:flex;align-items:center;gap:6px}
-.credential::before{content:"•";color:var(--blue);font-weight:700}
+/* ============ Founder ============ */
+.founder-card{
+  display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:center;
+  background:var(--card-bg);border:1px solid var(--card-border);
+  border-radius:24px;padding:64px;
+}
+.founder-portrait{
+  width:200px;height:200px;border-radius:50%;background:var(--accent);
+  display:grid;place-items:center;color:#fff;font-size:72px;font-weight:700;
+  margin:0 auto;
+}
+.founder-name{margin-top:20px;text-align:center;font-size:18px;font-weight:600}
+.founder-creds{text-align:center;font-size:14px;color:var(--text-2);margin-top:4px}
+.founder-body blockquote{
+  font-size:30px;font-weight:600;letter-spacing:-0.6px;line-height:1.3;margin-bottom:24px;
+}
+.founder-body blockquote em{font-style:normal;color:var(--accent)}
+.founder-body p{font-size:18px;color:var(--text-2);margin-bottom:16px}
+.founder-body p:last-child{margin-bottom:0}
 
-/* ===== FAQ ===== */
-.faq-list{max-width:760px;margin:60px auto 0}
-.faq-item{border-bottom:1px solid var(--border);padding:24px 0;cursor:pointer}
-.faq-q{display:flex;justify-content:space-between;align-items:center;font-size:18px;font-weight:600;color:var(--text)}
-.faq-icon{width:24px;height:24px;transition:transform .2s;color:var(--text3)}
-.faq-a{margin-top:16px;color:var(--text2);line-height:1.6;max-height:0;overflow:hidden;transition:max-height .3s}
-.faq-item.open .faq-a{max-height:200px}
-.faq-item.open .faq-icon{transform:rotate(45deg)}
+/* ============ Pricing ============ */
+.pricing-card{
+  max-width:560px;margin:0 auto;background:#fff;border:2px solid var(--accent);
+  border-radius:24px;padding:56px 48px;text-align:center;
+  box-shadow:0 24px 64px rgba(30,99,210,.12);
+}
+.price-name{font-size:15px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.price{font-size:72px;font-weight:700;letter-spacing:-2px;line-height:1;margin-top:16px}
+.price-period{font-size:18px;color:var(--text-2);font-weight:400}
+.price-sub{font-size:16px;color:var(--text-2);margin-top:10px}
+.price-list{list-style:none;margin:36px 0;text-align:left;display:grid;gap:14px}
+.price-list li{display:flex;gap:12px;align-items:flex-start;font-size:17px;color:var(--text)}
+.price-list svg{flex:none;margin-top:4px}
+.guarantee{
+  background:var(--accent-tint);border-radius:var(--radius-card);
+  padding:20px 24px;font-size:16px;color:var(--text);margin-bottom:32px;
+}
+.guarantee strong{color:var(--accent)}
+.price-scarcity{font-size:14px;color:var(--text-2);margin-top:18px}
 
-/* ===== CTA ===== */
-.cta{background:linear-gradient(135deg,#1e63d2 0%,#1850b0 100%);color:#fff;text-align:center;padding:100px 24px;position:relative;overflow:hidden}
-.cta::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:rgba(255,255,255,0.08);border-radius:50%}
-.cta::after{content:"";position:absolute;bottom:-50%;left:-10%;width:300px;height:300px;background:rgba(255,255,255,0.05);border-radius:50%}
-.cta-inner{max-width:640px;margin:0 auto;position:relative;z-index:2}
-.cta h2{color:#fff;margin-bottom:16px}
-.cta p{color:rgba(255,255,255,0.85);font-size:18px;margin-bottom:32px}
-.cta-btn{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;background:#fff;color:var(--blue);border:none;border-radius:100px;font-size:17px;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none;transition:all .25s;box-shadow:0 8px 30px rgba(0,0,0,0.15)}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(0,0,0,0.25)}
-.cta-btn-icon{width:20px;height:20px;background:var(--blue);border-radius:4px;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:12px;font-weight:700}
-.cta-sub{font-size:14px;color:rgba(255,255,255,0.7);margin-top:16px}
+/* ============ FAQ ============ */
+.faq-list{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--card-border)}
+.faq-item summary{
+  display:flex;justify-content:space-between;align-items:center;gap:24px;
+  padding:26px 4px;cursor:pointer;font-size:19px;font-weight:600;list-style:none;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:hover{color:var(--accent)}
+.faq-chevron{flex:none;transition:transform .25s;color:var(--text-2)}
+.faq-item[open] .faq-chevron{transform:rotate(180deg);color:var(--accent)}
+.faq-answer{padding:0 4px 26px;font-size:17px;color:var(--text-2);max-width:680px}
 
-/* ===== FOOTER ===== */
-footer{background:#0f172a;color:rgba(255,255,255,0.6);padding:60px 24px 30px}
-.footer-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
-.footer-brand{color:#fff;font-size:18px;font-weight:700;margin-bottom:12px}
-.footer-desc{font-size:14px;line-height:1.6;max-width:280px}
-.footer-col h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px;text-transform:uppercase}
-.footer-col a{display:block;color:rgba(255,255,255,0.6);text-decoration:none;font-size:14px;padding:6px 0;transition:color .2s}
-.footer-col a:hover{color:#fff}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;text-align:center;font-size:13px}
+/* ============ Final CTA ============ */
+.final-cta{background:var(--text);text-align:center}
+.final-cta h2{color:#fff;max-width:760px;margin:0 auto}
+.final-cta .section-sub{color:#b8c2d4}
+.final-cta .waitlist-form{border-color:transparent;box-shadow:0 8px 40px rgba(0,0,0,.3)}
+.final-cta .waitlist-note{color:#8d99ad}
+.final-cta .waitlist-success{background:rgba(141,178,232,.15);color:#cfe0f7}
 
-/* ===== RESPONSIVE ===== */
+/* ============ Footer ============ */
+.footer{background:var(--text);border-top:1px solid rgba(255,255,255,.08);padding:64px 24px 40px}
+.footer-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px}
+.footer .logo{color:#fff}
+.footer .logo:hover{color:#fff}
+.footer-tag{font-size:15px;color:#8d99ad;margin-top:14px;max-width:320px}
+.footer h4{font-size:14px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#8d99ad;margin-bottom:18px}
+.footer ul{list-style:none;display:grid;gap:10px}
+.footer ul a{font-size:15px;color:#b8c2d4}
+.footer ul a:hover{color:#fff}
+.footer-legal{
+  max-width:var(--max);margin:48px auto 0;padding-top:24px;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+  font-size:14px;color:#8d99ad;
+}
+
+/* ============ Reveal states ============ */
+.js [data-reveal]{opacity:0;transform:translateY(32px)}
+.js [data-stagger]>*{opacity:0;transform:translateY(32px)}
+@media (prefers-reduced-motion:reduce){
+  .js [data-reveal],.js [data-stagger]>*{opacity:1;transform:none}
+  .hero-badge .dot{animation:none}
+  .card:hover,.btn-primary:hover{transform:none}
+}
+
+/* ============ Responsive ============ */
+@media (max-width:1024px){
+  h1{font-size:56px;letter-spacing:-1.4px}
+  h2{font-size:40px}
+  .twist h2{font-size:42px}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step::after{display:none}
+  .founder-card{grid-template-columns:1fr;gap:40px;padding:48px;text-align:center}
+  .founder-body blockquote{font-size:26px}
+}
 @media (max-width:768px){
-  .section{padding:80px 20px}
-  .hero{padding:120px 20px 60px}
+  body{font-size:18px}
+  h1{font-size:44px;letter-spacing:-1px}
+  h2{font-size:34px;letter-spacing:-0.8px}
+  .twist h2{font-size:32px}
+  .section{padding:96px 24px}
+  .section-head{margin-bottom:48px}
   .nav-links{display:none}
-  .problem-grid,.pricing-grid,.process-steps{grid-template-columns:1fr}
-  .solution-grid,.case-grid,.founder-grid{grid-template-columns:1fr;gap:40px}
-  .footer-inner{grid-template-columns:1fr 1fr}
-  .price-card.featured{transform:none}
+  .grid-3{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .case-quote blockquote p{font-size:22px}
+  .price{font-size:56px}
+  .pricing-card{padding:40px 28px}
+  .footer-inner{grid-template-columns:1fr;gap:36px}
+  .waitlist-form{flex-direction:column;border-radius:24px;padding:10px}
+  .waitlist-form input{padding:12px 16px;text-align:center}
+  .waitlist-form .btn{width:100%}
+}
+@media (max-width:480px){
+  h1{font-size:36px}
+  h2{font-size:28px}
+  .twist h2{font-size:26px}
+  .section{padding:80px 20px}
+  .hero{padding:120px 20px 80px}
+  .hero-sub{font-size:18px}
+  .stat{font-size:40px}
+  .nav .btn{padding:10px 18px;font-size:14px}
+  .founder-portrait{width:140px;height:140px;font-size:52px}
+  .founder-body blockquote{font-size:22px}
 }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
-<nav>
+<!-- ================= NAV ================= -->
+<nav class="nav" id="nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="#" class="logo">
-      <span class="logo-mark">E</span>
+    <a class="logo" href="#top" aria-label="Edific — home">
+      <span class="logo-mark" aria-hidden="true">E</span>
       Edific
     </a>
-    <div class="nav-links">
-      <a href="#solution">Solutions</a>
-      <a href="#case-study">Results</a>
-      <a href="#process">Process</a>
-      <a href="pricing.html">Pricing</a>
-    </div>
-    <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="nav-cta">Book a Call →</a>
+    <ul class="nav-links">
+      <li><a href="#problem">The Problem</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#apply">Apply for the Waitlist</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="hero-badge-dot"></span>
-      2 spots open for June 2026
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <p class="hero-badge" data-hero="1"><span class="dot" aria-hidden="true"></span>The Dental Intake Engine</p>
+    <h1 data-hero="2">Not AI receptionists.<span class="line-2">AI for dentistry.</span></h1>
+    <p class="hero-sub" data-hero="3">Book 2–3x more of the patients already contacting your practice. We fix the leaks in your booking funnel for good.</p>
+
+    <div class="waitlist" data-hero="4">
+      <form class="waitlist-form" data-waitlist novalidate>
+        <label class="visually-hidden" for="email-hero">Your practice email</label>
+        <input type="email" id="email-hero" name="email" placeholder="you@yourpractice.com" autocomplete="email" required>
+        <button class="btn btn-primary" type="submit">Apply for the Waitlist</button>
+      </form>
+      <p class="waitlist-success" role="status">Application received. We review every practice personally — you'll hear from us within 48 hours.</p>
+      <p class="waitlist-note">5 practices per city. One per neighborhood. No credit card.</p>
     </div>
-    <h1>AI systems that <span class="hl">work while you sleep</span></h1>
-    <p>Stop hiring, training, and managing. We deploy AI workers that handle your repetitive ops — lead qualification, customer follow-up, data entry, and reporting — 24/7, without breaks.</p>
-    <div class="hero-actions">
-      <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="btn btn-primary">Book Free Strategy Call →</a>
-      <a href="#case-study" class="btn btn-outline">See Real Results</a>
+
+    <ul class="hero-proof" data-hero="5">
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.8 6.2H15L10.9 9.4L12.4 14.5L8 11.4L3.6 14.5L5.1 9.4L1 6.2H6.2L8 1Z" fill="#1e63d2"/></svg>2-second response time</li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.8 6.2H15L10.9 9.4L12.4 14.5L8 11.4L3.6 14.5L5.1 9.4L1 6.2H6.2L8 1Z" fill="#1e63d2"/></svg>48 hours from sign to live</li>
+      <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.8 6.2H15L10.9 9.4L12.4 14.5L8 11.4L3.6 14.5L5.1 9.4L1 6.2H6.2L8 1Z" fill="#1e63d2"/></svg>24/7, every channel</li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= PROBLEM ================= -->
+<section class="section" id="problem" aria-labelledby="problem-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">The Problem</p>
+      <h2 id="problem-title">Your practice is leaking patients.</h2>
+      <p class="section-sub">Not the ones you haven't reached yet. The ones already calling, messaging, and filling out your forms — and never hearing back in time.</p>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span class="accent">2,400+</span></div>
-        <div class="hero-stat-lbl">hours saved per client/year</div>
+
+    <div class="grid-3" data-stagger>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><line x1="23" y1="1" x2="17" y2="7"/><line x1="17" y1="1" x2="23" y2="7"/></svg>
+        </div>
+        <p class="stat">€5K–15K</p>
+        <p class="stat-label">Lost every month to missed calls</p>
+        <h3>The phone rings during a procedure</h3>
+        <p>Nobody picks up. That patient doesn't leave a voicemail — they Google the next practice and book there instead. A single missed implant inquiry can be €5,000 walking out the door.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </div>
+        <p class="stat"><span data-count="73" data-suffix="%">0%</span></p>
+        <p class="stat-label">Of after-hours messages go unanswered</p>
+        <h3>WhatsApp messages sit on read</h3>
+        <p>Patients message at 9pm, on weekends, between meetings. By the time your front desk replies the next morning, most have already booked somewhere that answered first.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <p class="stat"><span data-count="15" data-suffix="+">0+</span> hrs</p>
+        <p class="stat-label">Of front-desk admin every week</p>
+        <h3>Your team is drowning in phone tag</h3>
+        <p>Reminders, reschedules, no-show chasing, insurance questions. 15+ hours a week of repetitive admin — time your receptionist could spend on the patients actually in the practice.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE TWIST ================= -->
+<section class="section twist" aria-labelledby="twist-title">
+  <div class="container" data-reveal>
+    <h2 id="twist-title">Most practices don't need more patients. <em>They need better booking.</em></h2>
+    <ul class="twist-lines">
+      <li>Every WhatsApp message that sits unanswered.</li>
+      <li>Every call that goes to voicemail during a procedure.</li>
+      <li>Every no-show that could've been a reschedule.</li>
+    </ul>
+    <p class="twist-punch">That's not a marketing problem. That's an intake problem.</p>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" id="how-it-works" aria-labelledby="how-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">How It Works</p>
+      <h2 id="how-title">From first contact to booked chair. Automatically.</h2>
+      <p class="section-sub">One engine sits in front of your practice and handles intake end to end. You only hear about it when a new patient books.</p>
+    </div>
+
+    <ol class="steps" data-stagger>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <h3>A patient contacts you</h3>
+        <p>Phone, WhatsApp, or your website. During a procedure, after hours, or on a Sunday.</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <h3>Answered in 2 seconds</h3>
+        <p>Every inquiry gets an instant, human-quality response. No voicemail. No "we'll call you back."</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <h3>Qualified &amp; booked</h3>
+        <p>Treatment, urgency, and insurance checked — then the appointment lands straight in your calendar.</p>
+      </li>
+      <li class="step">
+        <span class="step-num" aria-hidden="true">4</span>
+        <h3>Your systems updated</h3>
+        <p>Every contact logged in your CRM. Every no-show followed up. Every visit followed by a review request.</p>
+      </li>
+    </ol>
+    <p class="how-note" data-reveal><strong>Emergencies skip the queue.</strong> Anything urgent routes to a human instantly — you're notified within seconds.</p>
+  </div>
+</section>
+
+<!-- ================= CASE STUDY ================= -->
+<section class="section case" id="results" aria-labelledby="case-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Case Study — Praxis Dr. Weber</p>
+      <h2 id="case-title">A three-dentist practice. 48 hours. Numbers that changed the month.</h2>
+    </div>
+
+    <figure class="case-quote" data-reveal>
+      <blockquote>
+        <p>We thought we had a marketing problem. We had a booking problem. Patients were contacting us all along — we just weren't answering fast enough. Now every inquiry is handled before I've even seen it.</p>
+      </blockquote>
+      <figcaption class="case-attr">
+        <strong>Dr. Weber</strong>
+        Practice owner · Praxis Dr. Weber · 3 dentists, 5 chairs
+      </figcaption>
+    </figure>
+
+    <div class="grid-3 case-metrics" data-stagger>
+      <article class="card">
+        <p class="stat"><span data-count="73" data-suffix="%">0%</span></p>
+        <p class="stat-label">Fewer missed calls</p>
+        <p>Every call answered in 2 seconds, 24/7 — including the ones that used to ring out during procedures.</p>
+      </article>
+      <article class="card">
+        <p class="stat"><span data-count="42" data-suffix="%">0%</span></p>
+        <p class="stat-label">More appointments booked</p>
+        <p>Same patient inquiries as before. The difference: every one of them now gets answered and booked.</p>
+      </article>
+      <article class="card">
+        <p class="stat"><span data-count="8400" data-prefix="€">€0</span></p>
+        <p class="stat-label">Recovered per month</p>
+        <p>Revenue that was already walking through the door — and previously walking right back out.</p>
+      </article>
+    </div>
+    <p class="case-footnote" data-reveal>Deployed in 48 hours. First results inside week one. No change to staff, software, or phone number.</p>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section class="section" aria-labelledby="ba-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Before / After</p>
+      <h2 id="ba-title">Same practice. Same patients. Different system.</h2>
+    </div>
+
+    <div class="table-wrap" data-reveal>
+      <table>
+        <caption class="visually-hidden">Comparison of practice operations before and after the Dental Intake Engine</caption>
+        <thead>
+          <tr>
+            <th scope="col">What happens when…</th>
+            <th scope="col">Before</th>
+            <th scope="col" class="after-h">With the Intake Engine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">A WhatsApp message arrives</th>
+            <td class="before">Answered in 3–4 hours, if at all</td>
+            <td class="after">Answered in 2 seconds</td>
+          </tr>
+          <tr>
+            <th scope="row">The phone rings after hours</th>
+            <td class="before">Voicemail nobody checks</td>
+            <td class="after">Answered, qualified, and booked</td>
+          </tr>
+          <tr>
+            <th scope="row">A patient doesn't show up</th>
+            <td class="before">Empty chair, lost forever</td>
+            <td class="after">Automatic one-tap reschedule</td>
+          </tr>
+          <tr>
+            <th scope="row">A visit ends</th>
+            <td class="before">Review requested when someone remembers</td>
+            <td class="after">Review requested after every visit</td>
+          </tr>
+          <tr>
+            <th scope="row">A new patient inquires</th>
+            <td class="before">~30% never reach the chair</td>
+            <td class="after">94% booked within 60 seconds</td>
+          </tr>
+          <tr>
+            <th scope="row">Your front desk clocks in</th>
+            <td class="before">15+ hours/week of phone admin</td>
+            <td class="after">Under 2 hours/week</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="section" id="features" aria-labelledby="features-title" style="padding-top:0">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">What's Inside</p>
+      <h2 id="features-title">One engine. Every leak sealed.</h2>
+    </div>
+
+    <div class="grid-3" data-stagger>
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Every channel, one engine</h3>
+        <p>Phone, WhatsApp, web chat, and email — handled by one system with one memory. Patients can start on the phone and finish on WhatsApp without repeating themselves.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9"/><polyline points="21 3 21 9 15 9"/></svg>
+        </div>
+        <h3>Your calendar &amp; CRM, always current</h3>
+        <p>Appointments land directly in your existing calendar. Every contact, booking, and follow-up is logged in your CRM the moment it happens. Nothing to re-type, ever.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Speaks your patients' language</h3>
+        <p>Portuguese, English, French, and German — switching automatically to whatever the patient uses. They never notice anything except a fast, helpful answer.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Live in 48 hours</h3>
+        <p>Day one: we connect your calendar, phone, and WhatsApp. Day two: responses tuned to your practice and treatments. Hour 48: the engine is answering patients.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Smart qualification, human escalation</h3>
+        <p>Treatment type, urgency, and insurance checked before booking. Pain cases and emergencies route to a human instantly — with full context already gathered.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Numbers you can act on</h3>
+        <p>A weekly report in plain language: calls answered, appointments booked, no-shows recovered, revenue saved. You see exactly what the engine earned you.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="section" id="founder" aria-labelledby="founder-title">
+  <div class="container">
+    <h2 id="founder-title" class="visually-hidden">About the founder</h2>
+    <div class="founder-card" data-reveal>
+      <div>
+        <div class="founder-portrait" aria-hidden="true">H</div>
+        <p class="founder-name">Hammadou</p>
+        <p class="founder-creds">INDIGO Fund · SH Digital · Embassy operations</p>
       </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span class="accent">€47K</span></div>
-        <div class="hero-stat-lbl">avg annual savings</div>
-      </div>
-      <div class="hero-stat">
-        <div class="hero-stat-num"><span class="accent">14 days</span></div>
-        <div class="hero-stat-lbl">from call to live system</div>
+      <div class="founder-body">
+        <blockquote><em>"I build systems that run themselves."</em></blockquote>
+        <p>I've spent years building operations that run without human intervention — at an investment fund, in digital agencies, inside an embassy. Different industries, same lesson: most organizations don't fail for lack of demand. They fail at the front door.</p>
+        <p>Dental practices are the clearest case I've ever seen. A practice loses €5,000–15,000 a month — not because patients aren't interested, but because a WhatsApp message sat unanswered, a phone rang during a procedure, a no-show was never followed up.</p>
+        <p>I built the Dental Intake Engine to fix exactly that. One system. One price. One guarantee: if it doesn't book you 5 new patients in 30 days, you don't pay.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- LOGOS -->
-<section class="logos">
-  <div class="logos-inner">
-    <div class="logos-label">TRUSTED BY TEAMS AT</div>
-    <div class="logo-grid">
-      <span class="logo-item">◆ Riverside Dental</span>
-      <span class="logo-item">▲ HomeServe Pro</span>
-      <span class="logo-item">● TechFlow Labs</span>
-      <span class="logo-item">★ Spark Studio</span>
-      <span class="logo-item">◆ Bloom Agency</span>
+<!-- ================= PRICING ================= -->
+<section class="section" id="pricing" aria-labelledby="pricing-title" style="padding-top:0">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">Pricing</p>
+      <h2 id="pricing-title">One system. One price. No tiers.</h2>
+      <p class="section-sub">No Starter. No Pro. No "Contact Sales" maze. Everything your practice needs to stop leaking patients, for one flat price.</p>
     </div>
-  </div>
-</section>
 
-<!-- PROBLEM -->
-<section class="section problem">
-  <div class="inner text-center">
-    <div class="tag">The Problem</div>
-    <h2>You're losing hours to work that AI should handle</h2>
-    <p class="desc desc-center">Your team spends 40% of their week on tasks a machine could do better. Here's what that actually costs you.</p>
-    <div class="problem-grid">
-      <div class="p-card">
-        <div class="p-icon">⏱</div>
-        <h3>Manual Lead Qualification</h3>
-        <p>Your sales team spends 3 hours/day reading emails, checking CRMs, and routing leads. AI qualifies and routes in 30 seconds.</p>
-      </div>
-      <div class="p-card">
-        <div class="p-icon">📞</div>
-        <h3>24/7 Customer Support</h3>
-        <p>Customers expect instant answers. Hiring night shift costs €45K/year. AI handles 80% of inquiries at 1/20th the cost.</p>
-      </div>
-      <div class="p-card">
-        <div class="p-icon">📊</div>
-        <h3>Reporting & Data Entry</h3>
-        <p>20 hours/week lost to copy-paste between tools. AI syncs everything, generates reports, and flags anomalies automatically.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="pricing-card" data-reveal>
+      <p class="price-name">The Dental Intake Engine</p>
+      <p class="price">€997<span class="price-period">/month</span></p>
+      <p class="price-sub">No setup fee. No long-term contract. 30-day notice.</p>
 
-<!-- SOLUTION -->
-<section class="section" id="solution">
-  <div class="inner">
-    <div class="tag">How We Fix It</div>
-    <h2>Custom AI workflows, deployed in 14 days</h2>
-    <p class="desc">We don't sell software. We build and run AI systems tailored to your exact operations — then maintain them so you don't have to.</p>
-    <div class="solution-grid">
-      <ul class="solution-list">
-        <li>
-          <span class="solution-check"></span>
-          <div>
-            <strong>Lead qualification & routing</strong>
-            <span>AI scores every lead, enriches data, books meetings directly on calendars</span>
-          </div>
-        </li>
-        <li>
-          <span class="solution-check"></span>
-          <div>
-            <strong>Customer support automation</strong>
-            <span>AI handles FAQs, escalates edge cases, learns from your team's responses</span>
-          </div>
-        </li>
-        <li>
-          <span class="solution-check"></span>
-          <div>
-            <strong>Multi-tool data sync</strong>
-            <span>Your CRM, email, spreadsheets, and tools stay in sync — no manual work</span>
-          </div>
-        </li>
-        <li>
-          <span class="solution-check"></span>
-          <div>
-            <strong>Automated reporting</strong>
-            <span>Daily/weekly summaries delivered to your inbox or Slack automatically</span>
-          </div>
-        </li>
-        <li>
-          <span class="solution-check"></span>
-          <div>
-            <strong>Voice agents for inbound calls</strong>
-            <span>AI answers, qualifies, and books — sounds human, never sleeps</span>
-          </div>
-        </li>
+      <ul class="price-list">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Every call, WhatsApp, and web inquiry answered in 2 seconds, 24/7</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Appointments qualified and booked straight into your calendar</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automatic no-show recovery with one-tap reschedule</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Review request after every visit</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>CRM sync, emergency routing, and human escalation</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Portuguese, English, French &amp; German, automatically</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>48-hour white-glove setup — we do everything</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1e63d2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Weekly plain-language performance report</li>
       </ul>
-      <div class="solution-visual">
-        <div class="code-block">
-          <div class="comment"># Lead just submitted form</div><br>
-          <span class="key">ai_workflow</span>.<span class="val">enrich</span>(lead)<br>
-          <span class="key">ai_workflow</span>.<span class="val">score</span>(lead) <span class="flow">→ 87/100</span><br>
-          <span class="key">ai_workflow</span>.<span class="val">route</span>(lead, <span class="val">"hot"</span>)<br><br>
-          <div class="comment"># Auto-booked meeting</div>
-          <span class="key">calendar</span>.<span class="val">create</span>({<br>
-          &nbsp;&nbsp;<span class="key">title</span>: <span class="val">"Discovery — Acme Corp"</span>,<br>
-          &nbsp;&nbsp;<span class="key">time</span>: <span class="val">"2026-06-12 14:00"</span>,<br>
-          &nbsp;&nbsp;<span class="key">attendees</span>: [lead.email, rep.email]<br>
-          })<br><br>
-          <div class="comment"># Slack notification sent ✓</div>
-          <div class="flow">Total time: 4.2 seconds</div>
-        </div>
+
+      <div class="guarantee">
+        <strong>The guarantee:</strong> 5 new patients booked in your first 30 days — or your money back. No questions, no fine print.
       </div>
+
+      <a class="btn btn-primary btn-lg" href="#apply">Apply for the Waitlist</a>
+      <p class="price-scarcity">5 practices per city. One per neighborhood. Applications reviewed personally.</p>
     </div>
   </div>
 </section>
 
-<!-- CASE STUDY -->
-<section class="section case-study" id="case-study">
-  <div class="case-inner">
-    <div class="tag" style="color:#7dd3fc">Case Study</div>
-    <h2>How TechFlow Labs saved €58K and 1,800 hours in 6 months</h2>
-    <p class="desc">A 12-person SaaS company drowning in manual ops. We built three AI systems. Here's what happened.</p>
-    <div class="case-grid">
-      <div>
-        <div class="case-stats">
-          <div class="case-stat">
-            <div class="case-stat-label">Hours saved/month</div>
-            <div class="case-stat-value">312 <span class="delta">+340%</span></div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-label">Response time</div>
-            <div class="case-stat-value">8s <span class="delta">-96%</span></div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-label">Lead conversion</div>
-            <div class="case-stat-value">34% <span class="delta">+18pt</span></div>
-          </div>
-          <div class="case-stat">
-            <div class="case-stat-label">Annual savings</div>
-            <div class="case-stat-value">€58K <span class="delta">↑</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="case-quote">
-        <p class="case-quote-text">"We were one hire away from adding another ops person. Instead we got 24/7 coverage that never calls in sick. The ROI was visible in the first month."</p>
-        <div class="case-author">
-          <div class="case-avatar">M</div>
-          <div>
-            <div class="case-name">Marie Lefèvre</div>
-            <div class="case-role">Head of Operations, TechFlow Labs</div>
-          </div>
-        </div>
-      </div>
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <p class="section-kicker">FAQ</p>
+      <h2 id="faq-title">Questions dentists actually ask.</h2>
+    </div>
+
+    <div class="faq-list" data-reveal>
+      <details class="faq-item">
+        <summary>Does this replace my receptionist?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">No. It handles the routine — appointment requests, reschedules, reminders, after-hours inquiries — so your receptionist focuses on the patients in the chair. Most front desks get 15+ hours a week back.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What happens if the engine gets something wrong?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">Anything urgent or ambiguous routes to a human instantly — you or your front desk get a notification within seconds. Everything else is monitored daily, and we fix issues before they reach a second patient.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How fast can we go live?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">48 hours from sign to live. We connect your calendar and WhatsApp on day one, tune the responses to your practice on day two, and you see first results within the first week.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it speak my patients' languages?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">Yes — Portuguese, English, French, and German, switching automatically to whatever language the patient writes or speaks in. Patients don't notice anything except a fast, helpful answer.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does it work with my existing calendar and software?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">Yes. It connects to your existing calendar, phone number, WhatsApp, and practice software. You replace nothing, your number stays the same, and your team keeps working the way they already do.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What if I want to cancel?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </summary>
+        <p class="faq-answer">30-day notice, no long-term contracts, no exit fees. And if the engine doesn't book you 5 new patients in your first 30 days, you get your money back.</p>
+      </details>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="section" id="process">
-  <div class="inner">
-    <div class="tag text-center">The Process</div>
-    <h2 class="text-center">From call to live system in 14 days</h2>
-    <p class="desc desc-center">No 6-month implementations. No "change management." You see working AI in two weeks, not two quarters.</p>
-    <div class="process-steps">
-      <div class="process-step">
-        <span class="step-time">Day 1–2</span>
-        <div class="step-num">1</div>
-        <h3>Discovery Call</h3>
-        <p>30-min call. We map your highest-cost repetitive work and find 3–5 quick wins.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-time">Day 3–5</span>
-        <div class="step-num">2</div>
-        <h3>System Design</h3>
-        <p>You get a clear blueprint: which tools, what data flows, what ROI to expect.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-time">Day 6–12</span>
-        <div class="step-num">3</div>
-        <h3>Build & Test</h3>
-        <p>We build your AI workflows, test with your real data, iterate based on your feedback.</p>
-      </div>
-      <div class="process-step">
-        <span class="step-time">Day 14+</span>
-        <div class="step-num">4</div>
-        <h3>Go Live + Support</h3>
-        <p>Systems run 24/7. We monitor, maintain, and improve them. You focus on your business.</p>
-      </div>
+<!-- ================= FINAL CTA ================= -->
+<section class="section final-cta" id="apply" aria-labelledby="cta-title">
+  <div class="container" data-reveal>
+    <h2 id="cta-title">How about we just solve your booking for good?</h2>
+    <p class="section-sub">48 hours from now, every patient who contacts your practice gets answered in 2 seconds — booked, logged, and followed up. You'll just get a message when a new patient books.</p>
+
+    <div class="waitlist">
+      <form class="waitlist-form" data-waitlist novalidate>
+        <label class="visually-hidden" for="email-cta">Your practice email</label>
+        <input type="email" id="email-cta" name="email" placeholder="you@yourpractice.com" autocomplete="email" required>
+        <button class="btn btn-primary" type="submit">Apply for the Waitlist</button>
+      </form>
+      <p class="waitlist-success" role="status">Application received. We review every practice personally — you'll hear from us within 48 hours.</p>
+      <p class="waitlist-note">5 practices per city. One per neighborhood. 5 new patients in 30 days or your money back.</p>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section pricing" id="pricing" style="background:var(--bg-alt)">
-  <div class="inner">
-    <div class="tag text-center">Pricing</div>
-    <h2 class="text-center">Pay for results, not hours</h2>
-    <p class="desc desc-center">All plans include build, deploy, monitoring, and monthly optimization. No hidden fees. No "talk to sales" games — our pricing is right here.</p>
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="price-name">Starter</div>
-        <div class="price-amount"><span class="currency">€</span>1,490<span class="period">/mo</span></div>
-        <p class="price-desc">For solo operators and small teams ready to automate their first workflow.</p>
-        <ul class="price-features">
-          <li>1 AI workflow deployed</li>
-          <li>Up to 5,000 tasks/month</li>
-          <li>Lead qualification OR support</li>
-          <li>Email + Slack integration</li>
-          <li>Weekly performance reports</li>
-        </ul>
-        <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="price-cta">Start with Starter</a>
-      </div>
-      <div class="price-card featured">
-        <div class="price-badge">MOST POPULAR</div>
-        <div class="price-name">Growth</div>
-        <div class="price-amount"><span class="currency">€</span>3,490<span class="period">/mo</span></div>
-        <p class="price-desc">For growing companies that need multiple systems working together.</p>
-        <ul class="price-features">
-          <li>3 AI workflows deployed</li>
-          <li>Up to 25,000 tasks/month</li>
-          <li>Lead + support + reporting</li>
-          <li>CRM + email + calendar sync</li>
-          <li>Voice agent for inbound calls</li>
-          <li>Custom dashboard</li>
-          <li>Dedicated success manager</li>
-        </ul>
-        <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="price-cta">Get Growth Plan</a>
-      </div>
-      <div class="price-card">
-        <div class="price-name">Enterprise</div>
-        <div class="price-amount">Custom</div>
-        <p class="price-desc">For companies with complex ops that need a full AI ops team.</p>
-        <ul class="price-features">
-          <li>Unlimited AI workflows</li>
-          <li>Unlimited tasks</li>
-          <li>Multi-department automation</li>
-          <li>Custom integrations & APIs</li>
-          <li>White-glove SLA support</li>
-          <li>Quarterly business reviews</li>
-          <li>On-call AI ops engineer</li>
-        </ul>
-        <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="price-cta">Talk to Sales</a>
-      </div>
-    </div>
+</main>
 
-    <div class="pricing-diff">
-      <div class="pricing-diff-badge">🚀 Why we show prices</div>
-      <p><strong>Most AI agencies hide their pricing.</strong> WebFX shows theirs — so do we. No "custom quote" landing pages, no negotiation games. You know exactly what you're paying from day one. <strong>That's the Edific difference.</strong></p>
-    </div>
-
-    <table class="price-compare">
-      <thead>
-        <tr>
-          <th>Comparison</th>
-          <th>Single Grain</th>
-          <th>NP Digital</th>
-          <th>Automation House</th>
-          <th class="highlight">Edific</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Public pricing</td>
-          <td class="muted">✗ Hidden</td>
-          <td class="muted">✗ Brackets only</td>
-          <td class="muted">✗ Custom quotes</td>
-          <td class="highlight">✓ Published</td>
-        </tr>
-        <tr>
-          <td>Starting price</td>
-          <td class="muted">~$5K/mo</td>
-          <td class="muted">~$750/mo</td>
-          <td class="muted">Custom</td>
-          <td class="highlight">€1,490/mo</td>
-        </tr>
-        <tr>
-          <td>AI automation core</td>
-          <td class="muted">Add-on</td>
-          <td class="muted">Add-on</td>
-          <td class="highlight">Yes</td>
-          <td class="highlight">Yes (100%)</td>
-        </tr>
-        <tr>
-          <td>14-day deployment</td>
-          <td class="muted">✗</td>
-          <td class="muted">✗</td>
-          <td class="muted">30+ days</td>
-          <td class="highlight">✓ 14 days</td>
-        </tr>
-        <tr>
-          <td>European SMB focus</td>
-          <td class="muted">✗</td>
-          <td class="highlight">Partial</td>
-          <td class="highlight">Yes (PL)</td>
-          <td class="highlight">✓ Yes (EU-wide)</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<!-- FOUNDER -->
-<section class="section founder">
-  <div class="inner">
-    <div class="tag">Why Me</div>
-    <h2>Built by someone who's automated the boring parts of his own life first</h2>
-    <div class="founder-grid">
-      <div class="founder-img">H</div>
-      <div>
-        <p class="founder-quote">"I spent 3 years automating other people's operations before I built Edific. Now I only work with companies serious about replacing manual work with systems that don't sleep."</p>
-        <p class="founder-bio">Before Edific, I ran ops for a YC-backed fintech, then spent 18 months building AI workflows for SMBs across Europe and the US. I've deployed systems that handle 50,000+ tasks per month. I know what breaks, what scales, and what's worth automating.</p>
-        <p class="founder-bio">The promise of AI isn't "it'll change everything someday." It's that right now, in 2026, your competitor is probably already using it. The question is whether you catch up this quarter or next year.</p>
-        <div class="founder-signature">— Hammadou, Founder</div>
-        <div class="founder-credentials">
-          <span class="credential">3+ years in AI ops</span>
-          <span class="credential">12 production deployments</span>
-          <span class="credential">EU + US clients</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="section">
-  <div class="inner">
-    <div class="tag text-center">FAQ</div>
-    <h2 class="text-center">Common questions</h2>
-    <div class="faq-list">
-      <div class="faq-item open">
-        <div class="faq-q">What tools do you use? <span class="faq-icon">+</span></div>
-        <div class="faq-a">We work with your existing stack — n8n, Make, Zapier for orchestration; OpenAI, Anthropic, open-source models for AI; your CRM, email, calendar, and any tool with an API. We pick the cheapest reliable option for each job.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Do I need to know anything about AI? <span class="faq-icon">+</span></div>
-        <div class="faq-a">No. We handle everything. You describe your problem, we design and run the system. You see results in your dashboard.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">What if it doesn't work? <span class="faq-icon">+</span></div>
-        <div class="faq-a">First month is a 30-day pilot. If we don't hit the agreed KPIs, you don't pay the setup fee. We only keep clients who see real ROI.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">How is this different from hiring a VA? <span class="faq-icon">+</span></div>
-        <div class="faq-a">VAs cost €2,500–4,000/month, work 8 hours, need training, and make mistakes. Our systems cost less, work 24/7, never forget, and get better over time. Most clients replace 1–2 ops roles within 90 days.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">What about data privacy? <span class="fa-icon">+</span></div>
-        <div class="faq-a">Your data stays in your tools. We use enterprise APIs with zero-retention policies where possible. For EU clients, we deploy on EU-hosted models. We're GDPR-compliant and can sign DPAs.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta" id="cta">
-  <div class="cta-inner">
-    <h2>Let's see if we can save you 20+ hours a week</h2>
-    <p>30-minute call. No pitch. You'll leave with 3 specific automation ideas for your business, even if you never hire us.</p>
-    <a href="https://calendly.com/edific-ai/strategy-call" target="_blank" rel="noopener" class="cta-btn">
-      <span class="cta-btn-icon">📅</span>
-      Book Free Strategy Call
-    </a>
-    <div class="cta-sub">✓ No commitment · ✓ Free consultation · ✓ 30 minutes</div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Edific</div>
-      <p class="footer-desc">AI automation agency. We build and run AI systems that handle your repetitive operations — 24/7, no breaks, no training needed.</p>
+      <a class="logo" href="#top" aria-label="Edific — back to top">
+        <span class="logo-mark" aria-hidden="true">E</span>
+        Edific
+      </a>
+      <p class="footer-tag">The Dental Intake Engine. Book every patient. Fill every chair. Never miss again.</p>
     </div>
-    <div class="footer-col">
-      <h4>Solutions</h4>
-      <a href="#solution">Lead Qualification</a>
-      <a href="#solution">Customer Support</a>
-      <a href="#solution">Voice Agents</a>
-      <a href="#solution">Reporting</a>
-    </div>
-    <div class="footer-col">
-      <h4>Company</h4>
-      <a href="#founder">About</a>
-      <a href="#case-study">Case Studies</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="#cta">Contact</a>
-    </div>
-    <div class="footer-col">
-      <h4>Resources</h4>
-      <a href="#">Blog</a>
-      <a href="#">Documentation</a>
-      <a href="#">Privacy Policy</a>
+    <nav aria-label="Footer navigation">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#problem">The Problem</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@edific.uk">hello@edific.uk</a></li>
+        <li><a href="#apply">Apply for the Waitlist</a></li>
+      </ul>
     </div>
   </div>
-  <div class="footer-bottom">© 2026 Edific. Built with AI in Paris + São Paulo.</div>
+  <div class="footer-legal">
+    <p>© 2026 Edific. All rights reserved.</p>
+    <p>edific.uk</p>
+  </div>
 </footer>
 
+<!-- ================= GSAP ================= -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+
 <script>
-// FAQ toggle
-document.querySelectorAll('.faq-item').forEach(item => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('open');
-  });
-});
+document.documentElement.classList.remove('no-js');
+document.documentElement.classList.add('js');
 
-// Smooth scroll for nav links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+var REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- Nav shadow on scroll ---------- */
+(function () {
+  var nav = document.getElementById('nav');
+  var onScroll = function () {
+    nav.classList.toggle('scrolled', window.scrollY > 8);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
+
+/* ---------- Waitlist forms ---------- */
+/* TODO: POST to Supabase waitlist table once the Phase-3 form endpoint exists. */
+function handleWaitlist(form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var input = form.querySelector('input[type="email"]');
+    var email = (input.value || '').trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      input.focus();
+      input.setAttribute('aria-invalid', 'true');
+      return;
     }
+    input.removeAttribute('aria-invalid');
+    var subject = encodeURIComponent('Waitlist application — Dental Intake Engine');
+    var body = encodeURIComponent(
+      'Practice email: ' + email + '\n\n' +
+      'Please tell us:\n- Practice name and city\n- Number of dentists/chairs\n- Your biggest booking leak (missed calls / WhatsApp / no-shows)'
+    );
+    window.location.href = 'mailto:hello@edific.uk?subject=' + subject + '&body=' + body;
+    form.closest('.waitlist').classList.add('sent');
   });
-});
+}
+document.querySelectorAll('[data-waitlist]').forEach(handleWaitlist);
 
-// Animate stats on scroll
-const observerOptions = { threshold: 0.3 };
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-    }
+/* ---------- GSAP scroll animations ---------- */
+function initAnimations() {
+  if (!window.gsap || !window.ScrollTrigger) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  if (REDUCED_MOTION) {
+    gsap.set('[data-reveal], [data-stagger] > *, [data-hero]', { opacity: 1, y: 0 });
+    document.querySelectorAll('[data-count]').forEach(function (el) {
+      el.textContent = formatCount(el, parseFloat(el.dataset.count));
+    });
+    return;
+  }
+
+  /* Hero entrance — one orchestrated sequence */
+  gsap.fromTo('[data-hero]',
+    { opacity: 0, y: 28 },
+    { opacity: 1, y: 0, duration: 0.9, ease: 'power2.out', stagger: 0.12, delay: 0.15 }
+  );
+
+  /* Section reveals */
+  gsap.utils.toArray('[data-reveal]').forEach(function (el) {
+    gsap.fromTo(el,
+      { opacity: 0, y: 32 },
+      {
+        opacity: 1, y: 0, duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 82%', once: true }
+      }
+    );
   });
-}, observerOptions);
 
-document.querySelectorAll('.p-card, .process-step, .price-card, .case-stat').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(20px)';
-  el.style.transition = 'opacity 0.6s, transform 0.6s';
-  observer.observe(el);
-});
+  /* Card grid staggers */
+  gsap.utils.toArray('[data-stagger]').forEach(function (grid) {
+    gsap.fromTo(grid.children,
+      { opacity: 0, y: 32 },
+      {
+        opacity: 1, y: 0, duration: 0.7, ease: 'power2.out', stagger: 0.12,
+        scrollTrigger: { trigger: grid, start: 'top 82%', once: true }
+      }
+    );
+  });
+
+  /* Count-up metrics */
+  document.querySelectorAll('[data-count]').forEach(function (el) {
+    var target = parseFloat(el.dataset.count);
+    var proxy = { v: 0 };
+    gsap.to(proxy, {
+      v: target, duration: 1.6, ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+      onUpdate: function () { el.textContent = formatCount(el, proxy.v); }
+    });
+  });
+}
+
+function formatCount(el, value) {
+  var prefix = el.dataset.prefix || '';
+  var suffix = el.dataset.suffix || '';
+  var n = Math.round(value);
+  var str = n >= 1000 ? n.toLocaleString('de-DE') : String(n);
+  return prefix + str + suffix;
+}
+
+if (document.readyState === 'complete') initAnimations();
+else window.addEventListener('load', initAnimations);
 </script>
 
+<!-- ================= THREE.JS HERO ================= -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+
+const canvas = document.getElementById('hero-canvas');
+const hero = document.querySelector('.hero');
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function supportsWebGL() {
+  try {
+    const c = document.createElement('canvas');
+    return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl')));
+  } catch (e) { return false; }
+}
+
+if (supportsWebGL()) {
+  init();
+} else {
+  canvas.remove(); /* .hero-fallback gradient stays as the background */
+}
+
+function init() {
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
+  camera.position.z = 5.2;
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  /* --- 400 particles on a jittered torus (abstract ring / molar crown form) --- */
+  const COUNT = 400;
+  const R = 2.4;   /* torus major radius */
+  const r = 0.9;   /* torus tube radius */
+  const positions = new Float32Array(COUNT * 3);
+  const colors = new Float32Array(COUNT * 3);
+  const colorA = new THREE.Color('#1e63d2');
+  const colorB = new THREE.Color('#8db2e8');
+  const tmp = new THREE.Color();
+
+  for (let i = 0; i < COUNT; i++) {
+    const u = Math.random() * Math.PI * 2;
+    const v = Math.random() * Math.PI * 2;
+    const jitter = 0.85 + Math.random() * 0.3;
+    const x = (R + r * jitter * Math.cos(v)) * Math.cos(u);
+    const y = (R + r * jitter * Math.cos(v)) * Math.sin(u);
+    const z = r * jitter * Math.sin(v);
+    positions[i * 3] = x;
+    positions[i * 3 + 1] = y;
+    positions[i * 3 + 2] = z;
+    tmp.copy(colorA).lerp(colorB, Math.random());
+    colors[i * 3] = tmp.r;
+    colors[i * 3 + 1] = tmp.g;
+    colors[i * 3 + 2] = tmp.b;
+  }
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+  /* Soft-disc sprite — normal blending (additive is invisible on white) */
+  const sprite = (() => {
+    const c = document.createElement('canvas');
+    c.width = c.height = 64;
+    const ctx = c.getContext('2d');
+    const g = ctx.createRadialGradient(32, 32, 0, 32, 32, 32);
+    g.addColorStop(0, 'rgba(255,255,255,1)');
+    g.addColorStop(0.4, 'rgba(255,255,255,0.7)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, 64, 64);
+    return new THREE.CanvasTexture(c);
+  })();
+
+  const material = new THREE.PointsMaterial({
+    size: 0.085,
+    map: sprite,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.65,
+    depthWrite: false,
+    sizeAttenuation: true
+  });
+
+  const particles = new THREE.Points(geometry, material);
+  particles.rotation.x = -0.45; /* tilt the ring toward the viewer */
+  scene.add(particles);
+
+  /* --- Mouse parallax (lerped) --- */
+  let targetX = 0, targetY = 0, curX = 0, curY = 0;
+  if (!reduced) {
+    window.addEventListener('pointermove', (e) => {
+      targetX = (e.clientX / window.innerWidth - 0.5) * 0.25;
+      targetY = (e.clientY / window.innerHeight - 0.5) * 0.18;
+    }, { passive: true });
+  }
+
+  /* --- Resize --- */
+  function resize() {
+    const w = hero.clientWidth, h = hero.clientHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  /* --- Render loop: paused when hero is off-screen or tab hidden --- */
+  let visible = true, rafId = null;
+  const clock = new THREE.Clock();
+
+  function frame() {
+    rafId = null;
+    const dt = Math.min(clock.getDelta(), 0.05);
+    particles.rotation.z += 0.05 * dt;       /* slow ring spin */
+    particles.rotation.y += 0.018 * dt;      /* lazy drift */
+    curX += (targetX - curX) * 0.04;
+    curY += (targetY - curY) * 0.04;
+    particles.rotation.x = -0.45 + curY;
+    camera.position.x += (curX - camera.position.x) * 0.04;
+    camera.lookAt(scene.position);
+    renderer.render(scene, camera);
+    if (visible && !document.hidden && !reduced) rafId = requestAnimationFrame(frame);
+  }
+
+  function start() { if (rafId === null) { clock.getDelta(); rafId = requestAnimationFrame(frame); } }
+
+  new IntersectionObserver((entries) => {
+    visible = entries[0].isIntersecting;
+    if (visible) start();
+  }).observe(hero);
+
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) start(); });
+
+  /* Reduced motion: render exactly one static frame */
+  if (reduced) { renderer.render(scene, camera); }
+  else { start(); }
+}
+</script>
 </body>
 </html>

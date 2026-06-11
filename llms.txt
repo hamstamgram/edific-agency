@@ -1,0 +1,57 @@
+# Edific — The Dental Intake Engine
+
+> Automated patient intake for dental practices. Every call, WhatsApp message, and web inquiry answered in 2 seconds, qualified, and booked straight into the practice calendar. Live 48 hours after signing. One price: €997/month.
+
+Edific is a vertical AI product for dentistry — not an agency, not a generic chatbot. The positioning: "Not AI receptionists. AI for dentistry." The core claim: most practices don't need more patients — they need better booking. The engine books 2–3x more of the patients already contacting the practice.
+
+## Key facts
+
+- Product: The Dental Intake Engine
+- Website: https://edific.uk/
+- Contact: hello@edific.uk
+- Price: €997/month — single price, no tiers, no setup fee, 30-day notice
+- Guarantee: 5 new patients booked in the first 30 days, or your money back
+- Setup time: 48 hours from sign to live (white-glove, done for you)
+- Response time: 2 seconds, on every channel, 24/7
+- Channels: phone, WhatsApp, web chat, email
+- Languages: Portuguese, English, French, German (automatic switching)
+- Integrations: works with the practice's existing calendar, phone number, WhatsApp, and CRM — nothing replaced
+- Availability: waitlist model — 5 practices per city, one per neighborhood
+- Target customer: dental practices in Europe (2–5 chairs, 1–2 receptionists)
+
+## The problem it solves
+
+1. Missed calls cost practices €5,000–15,000/month — calls that ring out during procedures become patients who book with a competitor.
+2. 73% of after-hours WhatsApp messages go unanswered; patients who message at night book wherever answers first.
+3. Front desks spend 15+ hours/week on phone admin: reminders, reschedules, no-show chasing.
+
+## How it works (4 steps)
+
+1. A patient contacts the practice — phone, WhatsApp, or website, any hour.
+2. The engine answers in 2 seconds with a human-quality response.
+3. It qualifies (treatment, urgency, insurance) and books directly into the calendar. Emergencies route to a human instantly.
+4. The CRM is updated automatically: contacts logged, no-shows followed up, reviews requested after every visit.
+
+## Results (case study: Praxis Dr. Weber, 3-dentist practice)
+
+- 73% fewer missed calls
+- 42% more appointments booked
+- €8,400/month in recovered revenue
+- Deployed in 48 hours; first results inside week one
+
+## Founder
+
+Hammadou — operations systems builder (INDIGO Fund, SH Digital, embassy operations). "I build systems that run themselves."
+
+## FAQ summary
+
+- Does it replace the receptionist? No — it removes 15+ hrs/week of routine admin so staff focus on patients in the chair.
+- What if it gets something wrong? Urgent or ambiguous cases route to a human instantly; everything else is monitored daily.
+- How fast is go-live? 48 hours.
+- Languages? Portuguese, English, French, German — automatic.
+- Existing software? Connects to the practice's current calendar, number, WhatsApp, and CRM. Nothing replaced.
+- Cancellation? 30-day notice, no contracts, no exit fees; money-back guarantee if fewer than 5 new patients in the first 30 days.
+
+## Pages
+
+- [Home](https://edific.uk/): full product page — problem, how it works, case study, pricing, FAQ, waitlist application
